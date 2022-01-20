@@ -16,7 +16,7 @@
             position: relative;
         }
 
-        #font_a {
+        /* #font_a {
             position: absolute;
             left: 15%;
             top: 14vw;
@@ -24,9 +24,9 @@
             font-family: Helvetica Neue;
             font-weight: 600;
             color: #47D1C2;
-        }
+        } */
 
-        #font_b {
+        /* #font_b {
             position: absolute;
             left: 15.15%;
             top: 17.5vw;
@@ -34,9 +34,9 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             color: #47D1C2;
-        }
+        } */
 
-        #font_c {
+        /* #font_c {
             position: absolute;
             left: 15.15%;
             top: 22.5vw;
@@ -44,9 +44,9 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             color: #47D1C2;
-        }
+        } */
 
-        #font_d {
+        /* #font_d {
             position: absolute;
             left: 15.15%;
             top: 24.5vw;
@@ -54,7 +54,7 @@
             font-family: Helvetica Neue;
             font-weight: 350;
             color: #47D1C2;
-        }
+        } */
 
         #background1 {
             width: 100%;
@@ -765,7 +765,7 @@
         #z11 {
             position: absolute;
             left: 15vw;
-            top:92vw;
+            top: 92vw;
         }
 
         #z12 {
@@ -878,10 +878,10 @@
         <div id="back" style="top:0;">
             <img src="./image/main.png" style="width:100vw">
         </div>
-        <div id="font_a">MOOS</div>
-        <div id="font_b">A Better Mask Recycling System</div>
-        <div id="font_c">Individual Project</div>
-        <div id="font_d">2021.05 — 2021.08</div>
+        <div id="font_a" style="opacity: 0">MOOS</div>
+        <div id="font_b" style="opacity: 0">A Better Mask Recycling System</div>
+        <div id="font_c" style="opacity: 0">Individual Project</div>
+        <div id="font_d" style="opacity: 0">2021.05 — 2021.08</div>
     </div>
     <div id="background1">
         <div id="page1" class="page"></div>
@@ -938,7 +938,8 @@
             <img src="./image/page1/a8.png" style="width:17.019vw">
         </div> -->
         <div id="start_font" style="left:54%;top:22vw;">Research Question</div>
-        <div id="start_font" style="font-size: 2vw;left:54%;top:25vw;width:33vw;text-align:justify;">How Has Public Use & Conscious-ness of Masks Changed after Out-break, besides Disposal?</div>
+        <div id="start_font" style="font-size: 2vw;left:54%;top:25vw;width:33vw;text-align:justify;">How Has Public Use
+            & Conscious-ness of Masks Changed after Out-break, besides Disposal?</div>
         <!-- <div id="a9">
             <img src="./image/page1/a9.png" style="width:31.994500000000002vw">
         </div> -->
@@ -979,7 +980,8 @@
     <div id="background5">
         <div id="page6" class="page" style="position:absolute;top: 3.4vw;"></div>
         <div id="start_font">Questionnaire</div>
-        <div id="fonts" style="width:34vw;text-align: justify;">I designed an online questionnaire to ask people about the awareness, use and disposal of masks.
+        <div id="fonts" style="width:34vw;text-align: justify;">I designed an online questionnaire to ask people about
+            the awareness, use and disposal of masks.
         </div>
         <div id="b8">
             <img src="./image/page2/b8.png" style="width:35vw">
@@ -1031,7 +1033,7 @@
             <img src="./image/page3/c10.png" style="width:8vw">
         </div>
     </div>
-    
+
     <div id="background7">
         <div id="back">
             <img src="./image/page3/bj.png" style="width:50vw">
@@ -1053,7 +1055,8 @@
             <img src="./image/page3/c14.png" style="width:17.2935vw">
         </div> -->
         <div id="start_font" style="left:54%;top:23vw;">Reframed Question</div>
-        <div id="start_font" style="font-size: 2vw;left:54%;top:26vw;width:33vw;text-align:justify;">How Might We Improve the Mask Recycling Reform Based on the Existing System?</div>
+        <div id="start_font" style="font-size: 2vw;left:54%;top:26vw;width:33vw;text-align:justify;">How Might We
+            Improve the Mask Recycling Reform Based on the Existing System?</div>
         <!-- <div id="c15">
             <img src="./image/page3/c15.png" style="width:31.9945vw">
         </div> -->
@@ -1309,11 +1312,8 @@
 
     <div style="left:4.5vw;top:1.4vw;position: fixed;width: 5vw;height:5vw;">
         <a href="https://lynnzhenglin.github.io/portfolio">
-            <lord-icon
-                src="https://cdn.lordicon.com/jvucoldz.json"
-                trigger="hover"
-                colors="primary:#4a4a4a,secondary:#4FD5C6"
-                style="width:3.5vw;height:3.5vw">
+            <lord-icon src="https://cdn.lordicon.com/jvucoldz.json" trigger="hover"
+                colors="primary:#4a4a4a,secondary:#4FD5C6" style="width:3.5vw;height:3.5vw">
             </lord-icon>
         </a>
     </div>
@@ -1427,8 +1427,8 @@
                     var temp = 25;
                 }
                 for (var i = 0; i <= temp; ++i) {
-                        $("#pageUlLi" + i).css("color", "#4FD5C6");
-                    }
+                    $("#pageUlLi" + i).css("color", "#4FD5C6");
+                }
                 for (var i = temp + 1; i < dis.length; ++i) {
                     $("#pageUlLi" + i).css("color", "#d8d8d8");
                 }
@@ -1519,6 +1519,102 @@
         document.getElementById("pageUlLi25").onmousedown = function () {
             toPage(25);
         }
+
+        var tar1 = {
+            position: "absolute",
+            left: "15%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#47D1C2",
+            opacity: 1
+        };
+
+        $("#font_a").css({
+            position: "absolute",
+            left: "8%",
+            top: "14vw",
+            "font-size": "2.5vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "600",
+            color: "#47D1C2",
+            opacity: 0
+        });
+
+        $("#font_a").animate(tar1, 1000, "linear");
+
+        var tar2 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 1
+        };
+
+        $("#font_b").css({
+            position: "absolute",
+            left: "8%",
+            top: "17.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 0
+        });
+
+        $("#font_b").animate(tar2, 1000, "linear");
+
+        var tar3 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "22.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 1
+        };
+
+        $("#font_c").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "25vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 0
+        });
+
+        $("#font_c").animate(tar3, 1000, "linear");
+
+        var tar4 = {
+            position: "absolute",
+            left: "15.15%",
+            top: "24.5vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 1
+        };
+
+        $("#font_d").css({
+            position: "absolute",
+            left: "15.15%",
+            top: "27vw",
+            "font-size": "1.4vw",
+            "font-family": "Helvetica Neue",
+            "font-weight": "350",
+            color: "#47D1C2",
+            opacity: 0
+        });
+
+        $("#font_d").animate(tar4, 1000, "linear");
     </script>
 
 </body>
