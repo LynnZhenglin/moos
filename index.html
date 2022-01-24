@@ -882,7 +882,19 @@
         <div id="font_b" style="opacity: 0">A Better Mask Recycling System</div>
         <div id="font_c" style="opacity: 0">Individual Project</div>
         <div id="font_d" style="opacity: 0">2021.05 — 2021.08</div>
+        <div id="pdf" style="">
+            <lord-icon src="https://cdn.lordicon.com/wcjauznf.json" trigger="loop"
+                colors="primary:#4a4a4a,secondary:#4a4a4a" stroke="60"
+                style="width:3.5vw;height:3.5vw;position: absolute;top:0vw;left:1vw;">
+            </lord-icon>
+            <a href="../pdf/MOOS.pdf">
+                <div
+                    style="position: absolute;top:0.98vw;left:5.5vw;font-size: 1.3vw;font-family: Helvetica Neue;font-weight: 400;color: #4a4a4a;">
+                    View PDF</div>
+            </a>
+        </div>
     </div>
+
     <div id="background1">
         <div id="page1" class="page"></div>
         <div id="back">
@@ -1523,7 +1535,7 @@
         var tar1 = {
             position: "absolute",
             left: "15%",
-            top: "14vw",
+            top: "15vw",
             "font-size": "2.5vw",
             "font-family": "Helvetica Neue",
             "font-weight": "600",
@@ -1534,7 +1546,7 @@
         $("#font_a").css({
             position: "absolute",
             left: "8%",
-            top: "14vw",
+            top: "15vw",
             "font-size": "2.5vw",
             "font-family": "Helvetica Neue",
             "font-weight": "600",
@@ -1545,7 +1557,7 @@
         var tar2 = {
             position: "absolute",
             left: "15.15%",
-            top: "17.5vw",
+            top: "18.5vw",
             "font-size": "1.4vw",
             "font-family": "Helvetica Neue",
             "font-weight": "350",
@@ -1556,7 +1568,7 @@
         $("#font_b").css({
             position: "absolute",
             left: "8%",
-            top: "17.5vw",
+            top: "18.5vw",
             "font-size": "1.4vw",
             "font-family": "Helvetica Neue",
             "font-weight": "350",
@@ -1607,7 +1619,31 @@
             color: "#47D1C2",
             opacity: 0
         });
-        // sleep(0.5);
+
+        var tar5 = {
+            position: "absolute",
+            top: "35vw",
+            left: "15vw",
+            width: "13.5vw",
+            height: "3.5vw",
+            "background-color": "white",
+            "border-radius": "1vw",
+            opacity: 0.7,
+            "box-shadow": "rgb(74,74,74,0.3) 0px 0px 0.5vw"
+        }
+
+        $("#pdf").css({
+            position: "absolute",
+            top: "37.5vw",
+            left: "15vw",
+            width: "13.5vw",
+            height: "3.5vw",
+            "background-color": "white",
+            "border-radius": "1vw",
+            opacity: 0,
+            "box-shadow": "rgb(74,74,74,0.3) 0px 0px 0.5vw"
+        });
+
         setTimeout(function () {
             $("#font_a").animate(tar1, 1500, "linear");
 
@@ -1616,6 +1652,8 @@
             $("#font_c").animate(tar3, 1500, "linear");
 
             $("#font_d").animate(tar4, 1500, "linear");
+            
+            setTimeout(function () { $("#pdf").animate(tar5, 1500, "linear"); }, 1000);
         }, 1000);
 
     </script>
