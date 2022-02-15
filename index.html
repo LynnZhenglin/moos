@@ -849,19 +849,19 @@
         #v2 {
             position: absolute;
             left: 15%;
-            top: 59vw;
+            top: 106vw;
         }
 
         #v3 {
             position: absolute;
             left: 39%;
-            top: 59vw;
+            top: 106vw;
         }
 
         #v4 {
             position: absolute;
             left: 63%;
-            top: 59vw;
+            top: 106vw;
         }
 
         #v1 {
@@ -878,8 +878,8 @@
             border: 1px dashed #4FD5C6;
             height: 0;
             width: 85vw;
-            left:7.5vw;
-            position:absolute;
+            left: 7.5vw;
+            position: absolute;
             opacity: 0.3;
             top: 10vw;
         }
@@ -1331,6 +1331,9 @@
         <div id="r1">
             <img src="./image/page10/r1.png" style="width:70vw">
         </div>
+        <div id="r2" style="top:6.2vw;left:31vw">
+            <img src="./image/page10/r4.png" style="width:5vw">
+        </div>
         <div id="line" style="top:50.5vw"></div>
     </div>
 
@@ -1340,6 +1343,9 @@
         <div id="r2">
             <img src="./image/page10/r2.png" style="width:70vw">
         </div>
+        <div id="r2" style="top:6.2vw;left:31vw">
+            <img src="./image/page10/r3.png" style="width:5vw">
+        </div>
         <div id="line" style="top:64.5vw"></div>
     </div>
 
@@ -1348,8 +1354,10 @@
         <div id="v1">
             <img src="./image/page11/v1.png" style="width:100%">
         </div>
+        <div id="start_font" style="top:3vw;">What's Next</div>
         <div id="page25" class="page" style="top: 51vw;position: absolute;"></div>
-        <div id="start_font" style="top:53vw">Future Prospects</div>
+        <div id="page26" class="page" style="top: 98vw;position: absolute;"></div>
+        <div id="start_font" style="top:100vw">Future Prospects</div>
         <div id="v2">
             <img src="./image/page11/v2.png" style="width:22vw">
         </div>
@@ -1359,7 +1367,12 @@
         <div id="v4">
             <img src="./image/page11/v4.png" style="width:22vw">
         </div>
+        <iframe src="https://www.youtube.com/embed/JiSzGO6XbQE" title="YouTube video player"
+        style="width:60vw;height:39.375vw;left:20%;position:absolute;top:54vw;" frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen></iframe>
         <div id="line" style="top:50vw"></div>
+        <div id="line" style="top:97vw"></div>
     </div>
 
     <div style="left:4.5vw;top:1.4vw;position: fixed;width: 5vw;height:5vw;">
@@ -1397,6 +1410,7 @@
         <li id="pageUlLi23" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi24" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
         <li id="pageUlLi25" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
+        <li id="pageUlLi26" class="pageUlLi" style="color: #d8d8d8">&nbsp;</li>
     </ul>
 
     <script src="https://libs.baidu.com/jquery/1.11.3/jquery.min.js"></script>
@@ -1420,7 +1434,7 @@
                 for (var i = 1; i < obj.length; i++) {
                     dis.push(obj[i].getBoundingClientRect().top - temp);
                 }
-                $("#background18").css("padding-bottom", screenHeight + 0.51 * screenWidth);
+                $("#background18").css("padding-bottom", screenHeight + 0.98 * screenWidth);
             });
         }
 
@@ -1477,8 +1491,10 @@
                     var temp = 23;
                 } else if (height < dis[25] - 1) {
                     var temp = 24;
-                } else {
+                } else if (height < dis[26] - 1) {
                     var temp = 25;
+                } else {
+                    var temp = 26;
                 }
                 for (var i = 0; i <= temp; ++i) {
                     $("#pageUlLi" + i).css("color", "#4FD5C6");
@@ -1572,6 +1588,9 @@
         }
         document.getElementById("pageUlLi25").onmousedown = function () {
             toPage(25);
+        }
+        document.getElementById("pageUlLi26").onmousedown = function () {
+            toPage(26);
         }
 
         var tar1 = {
